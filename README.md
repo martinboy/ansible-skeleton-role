@@ -12,6 +12,7 @@ Use your own naming for role name and containing directory. See Ansible document
  rm -rf master.tar.gz
  find . -type f -exec  sed -i  's/skeleton_role/my_ansible_role/g' {} \; 
  ```
+**Note**: On macOs use [gnu-sed](https://formulae.brew.sh/formula/gnu-sed) vesrion of sed command
 
 ### Generate LICENSE file
 
