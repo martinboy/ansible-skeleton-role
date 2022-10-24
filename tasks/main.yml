@@ -1,0 +1,5 @@
+---
+# include role entry point task when role is enabled
+- include_tasks: _run.yml
+  when: skeleton_role_enabled
+  tags: []

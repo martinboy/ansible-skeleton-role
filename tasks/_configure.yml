@@ -1,0 +1,7 @@
+---
+# Check required variables, break role execution is failed
+
+# - name: configure | Task name
+#   fail:
+#     msg: 'some_variable is not set'
+#   when: some_variable is undefined
