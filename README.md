@@ -5,13 +5,19 @@
 In the example code bellow we used `my-ansible-role` as directory name and `my_ansible_role` as role name. 
 Use your own naming for role name and containing directory. See Ansible document about [Role names](https://galaxy.ansible.com/docs/contributing/creating_role.html#role-names). 
 
- ```bash
- mkdir my-ansible-role && cd my-ansible-role
- curl -L https://github.com/martinboy/ansible-skeleton-role/tarball/master -o master.tar.gz && \
- tar -xzf master.tar.gz  --strip-components=1 && \
- rm -rf master.tar.gz
- find . -type f -exec  sed -i  's/skeleton_role/my_ansible_role/g' {} \; 
- ```
+```bash
+mkdir my-ansible-role && cd my-ansible-role
+curl -L https://github.com/martinboy/ansible-skeleton-role/tarball/master -o master.tar.gz && \
+tar -xzf master.tar.gz  --strip-components=1 && \
+rm -rf master.tar.gz
+```
+
+Rename role names
+```bash
+find . -type f -exec  sed -i  's/skeleton_role/my_ansible_role/g' {} \; 
+find . -type f -exec  sed -i  's/skeleton-role/my-ansible-role/g' {} \; 
+```
+
 **Note**: On macOs use [gnu-sed](https://formulae.brew.sh/formula/gnu-sed) vesrion of sed command
 
 ### Generate LICENSE file
