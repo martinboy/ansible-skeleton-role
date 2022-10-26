@@ -1,2 +1,3 @@
 ---
 # Default values for role variables
+skeleton_role_enabled: yes                 # Enable the role
